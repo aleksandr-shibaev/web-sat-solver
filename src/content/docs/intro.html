@@ -1,31 +1,10 @@
-<div class="proto-hero">
-  <h1 class="proto-hero-title">Proto Equation Language</h1>
+<p class="chunk-paragraph">
+  <strong>Proto Equation Language</strong> is a declarative constraint language that compiles arithmetic, bitwise, and logical equations into
+  <strong style="white-space: nowrap">3-CNF-SAT</strong> boolean formulas (at most 3 literals per
+  clause) and solves them directly in the browser using <strong>MiniSat (WebAssembly)</strong> or
+  a built-in JS solver.
+</p>
 
-  <p class="proto-hero-lead">
-    A declarative constraint language that compiles arithmetic, bitwise, and logical equations into
-    <strong style="white-space: nowrap">3-CNF-SAT</strong> boolean formulas (at most 3 literals per
-    clause) and solves them directly in the browser using <strong>MiniSat (WebAssembly)</strong> or
-    a built-in JS solver.
-  </p>
-
-  <div class="proto-pipeline">
-    <div class="pipe-step">
-      <span class="pipe-num">01</span>
-      <span class="pipe-name">Bit-Blasting</span>
-      <span class="pipe-desc">Fixed-point 2's complement vectors</span>
-    </div>
-    <div class="pipe-step">
-      <span class="pipe-num">02</span>
-      <span class="pipe-name">3-CNF Compilation</span>
-      <span class="pipe-desc">Reduction to ≤3-literal clauses</span>
-    </div>
-    <div class="pipe-step">
-      <span class="pipe-num">03</span>
-      <span class="pipe-name">3-SAT Solver</span>
-      <span class="pipe-desc">MiniSat (WASM) or built-in JS backtracking solver</span>
-    </div>
-  </div>
-</div>
 
 <p class="chunk-paragraph">
   <strong>Quick Start:</strong> Enter your constraints in the editor (or click
